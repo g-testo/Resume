@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ResumeApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <nav>
+      <a href="">Personal</a> |
+      <a href="">Employment</a> |
+      <a href="">Expertise</a> |
+      <a href="">Skills</a> |
+      <a href="">Education</a>
+    </nav>
+    
+    <title>Gregory Testo Web Development Resume</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+  </body>
+
+  <footer>
+    <h6>Gregory Testo Website LinkedIn </h6>
+  </footer>
 </html>
