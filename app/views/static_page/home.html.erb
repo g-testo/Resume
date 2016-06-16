@@ -1,35 +1,48 @@
 <head>
+  <br><br>
   <h1>Gregory David Testo</h1>
-  <h2>
-    Phone: 212-203-8276
+  <h3>
+      Phone: 
+    <br> 
+      212-203-8276
     <br>
-    Email: gtesto@testophotography.com
+    <a href="mailto:gtesto@testophotography.com">
+      <%= image_tag "mail.png", size: "20x20", alt: "Edit Entry" %>
+    </a>
     <br>
-    <a href="www.linkedin.com/in/gregorytesto">LinkedIn</a>
-  </h2>
+    <a href="www.linkedin.com/in/gregorytesto">
+      <%= image_tag "linkedin.png", size: "80x20", alt: "Edit Entry" %>
+    </a> 
+  </h3>
 </head>
 <body>
   
   <section>
-    <h1>Personal Statement</h1>
-      <p>Junior web developer experienced in full stack Rails and over a decade experience as a multimedia creator.</p>
+    <h2 id="personal">Personal Statement</h2>
+    <p>Passionate junior web developer experienced in full stack Rails and over a decade experience as a multimedia creator and designer. Solid web debugging and version control experience.</p>
   </section>
   
   <section>
-    <h1>Employment History</h1>
+    <h2 id="jobs">Job History</h2>
     <p>
-      <ul>
+       <ul id="client_jobs">
         <li>Apple, Manhattan, New York</li>
         <li>Testo Photography, Manhattan, New York</li>
+      </ul>
+      <ul id="dates">
+        <li>2015 to Present</li>
+        <li>2013 to Present</li>
+      </ul>
+      <br>
+      <h2 id="client">Clients</h2>
+      <ul id="client_jobs">
         <li>SoNo Entertainment Studios, South Norwalk, Connecticut</li>
         <li>XK9 Comunicação Sao Paulo, Brazil</li>
         <li>ABI Marketing Public Relations, Manhattan, New York</li>
         <li>Bobette’s Takout Bistro, Milford, Connecticut</li>
-        <li>Strategic Marketing of Rollins College, Winter Park, FL</li>
+        <li>Strategic Marketing of Rollins College, Winter Park, Florida</li>
       </ul>
-      <ul>
-        <li>2015 to Present</li>
-        <li>2013 to Present</li>
+      <ul id="dates">
         <li>2014 to 2015</li>
         <li>2013 to 2014</li>
         <li>2013 to 2014</li>
@@ -40,10 +53,10 @@
   </section>
   
   <section>
-    <h1>Web Development Skills</h1>
+    <h2 id="skills">Web Development Skills</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
       <li>Javascript</li>
       <li>Ruby</li>
       <li>Rails</li>
@@ -56,24 +69,12 @@
   </section>
   
   <section>
-    <h1>Areas of Expertise</h1>
-    <ul>
-      <li>After Effects</li>
-      <li>Premiere Pro</li>
-      <li>Final Cut Pro</li>
-      <li>Photoshop</li>
-      <li>Illustrator</li>
-      <li>Lightroom</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h1>Academic Qualifications</h1>
-    <ul>
-      <li>New York University</li>
-      <li>Javascript and JQuery</li>
-      <li>Rollins College, Winter Park, Florida</li>
-      <li>Bachelor of Arts: Economics/Minor: Business</li>
-    </ul>
+    <h2 id="education">Education</h2>
+    <dl>
+      <dt>New York University</dt>
+      <dd>- Javascript and JQuery</dd>
+      <dt>Rollins College, Winter Park, Florida</dt>
+      <dd>- Bachelor of Arts: Economics</dd>
+    </dl>
   </section>
 </body>

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <nav>
-      <a href="">Personal</a> |
-      <a href="">Employment</a> |
-      <a href="">Expertise</a> |
-      <a href="">Skills</a> |
-      <a href="">Education</a>
-    </nav>
-    
+    <ul class="nav">
+      <li> <a href="#personal">Personal</a></li>
+      <li> <a href="#jobs">History</a></li>
+      <li> <a href="#skills">Skills</a></li>
+      <li> <a href="#education">Education</a></li>
+    </ul>
     <title>Gregory Testo Web Development Resume</title>
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+  
   <body>
 
     <%= yield %>
@@ -21,6 +21,7 @@
   </body>
 
   <footer>
-    <h6>Gregory Testo Website LinkedIn </h6>
+    <h6>Gregory Testo Website <a href="www.linkedin.com/in/gregorytesto">
+  <%= image_tag "linkedin.png", size: "40x10", alt: "Edit Entry" %></h6>
   </footer>
 </html>

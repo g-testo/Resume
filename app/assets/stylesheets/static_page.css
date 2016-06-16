@@ -1,0 +1,63 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+.nav{
+    margin:0;
+    padding:0;
+    position: static;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    padding: 5px 5px;
+}
+.nav a{
+    color: white;
+    display: inline-block;
+    padding:20px;
+    text-decoration: none;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: #111;
+}
+#nav{
+  
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+h1{
+  font-size: 200%;
+  text-align: center;
+}
+
+h3{
+  font-size: 75%;
+  text-align: center;
+}
+
+h2{
+  font-size: 125%;
+  font-style: normal;
+  text-align: center;
+}
+
+body {
+  background-color: rgba(200, 200, 200, 0.5);
+  background-size: cover;
+  width: 600px;
+  margin: 0 auto; 
+}
+
+#client_jobs{
+   text-align: left;
+   display: inline-block;
+ }
+#dates{
+
+   list-style: none;
+   display: inline-block;
+}
