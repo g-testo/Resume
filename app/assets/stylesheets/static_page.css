@@ -5,11 +5,13 @@
 .nav{
     margin:0;
     padding:0;
-    position: static;
+    position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
     text-align:center;
+  	left: 0;
+  	right: 0;
+  	background-color: #333;
 }
 .nav li{
     display:inline;
@@ -25,9 +27,12 @@
 .nav a:hover {
     background-color: #111;
 }
-#nav{
-  
-	background: url(images/bar-bg.jpg) repeat-x;
+/*Anchor correction for using a fixed centered navigation bar*/
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
 h1{
   font-size: 200%;
@@ -52,12 +57,25 @@ body {
   margin: 0 auto; 
 }
 
+#contact{
+  font-size: 100%;
+  text-align: center;
+}
+
 #client_jobs{
    text-align: left;
    display: inline-block;
  }
-#dates{
+/*#dates{*/
 
-   list-style: none;
-   display: inline-block;
+/*   list-style: none;*/
+/*   display: inline-block;*/
+/*}*/
+footer{
+  margin:auto;
+  text-align: center;
+  color: white;
+  position:relative;
+  width:100%;
+  background-color: #333;
 }
