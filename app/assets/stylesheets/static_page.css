@@ -3,6 +3,7 @@
   They will automatically be included in application.css.
 */
 .nav{
+  	word-spacing: 70px;
     margin:0;
     padding:0;
     position: fixed;
@@ -12,6 +13,8 @@
   	left: 0;
   	right: 0;
   	background-color: #333;
+  	/* zindex prevents elements from skill circle from overlaping navbar*/
+  	z-index: 100;
 }
 .nav li{
     display:inline;
@@ -20,7 +23,7 @@
 .nav a{
     color: white;
     display: inline-block;
-    padding:20px;
+    padding:10px;
     text-decoration: none;
     text-align: center;
 }
@@ -28,17 +31,28 @@
     background-color: #111;
 }
 /*Anchor correction for using a fixed centered navigation bar*/
-.anchor{
+.anchor{ 
   display: block;
-  height: 115px; /*same height as header*/
-  margin-top: -115px; /*same height as header*/
+  height: 90px; /*same height as header*/
+  margin-top: -90px; /*same height as header*/
   visibility: hidden;
 }
-h1{
-  font-size: 200%;
-  text-align: center;
+.me{
+  float: left;
+  margin-right: 10px;
 }
-
+.contact a{
+  text-decoration: none;
+  
+}
+head{
+  font-size: 100%;
+  text-align:center;
+  margin:auto;
+  padding:10px;
+  position: absolute;
+  display: inline-block;
+}
 h2{
   font-size: 125%;
   font-style: normal;
@@ -53,17 +67,68 @@ body {
   width: 600px;
   margin: 0 auto; 
 }
+.personal{
+  font-size: 80%;
+  text-align: justify;
+  width: 75%;
+  float: right;
 
-#contact{
-  font-size: 100%;
-  text-align: center;
 }
-
 #client_jobs{
    text-align: left;
    display: inline-block;
  }
+.circle-container {
+    background-image: url("cir.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    width: 25em;
+    height: 25em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    margin: 1.75em auto 0;
+   
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em;
+}
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+/* enlarges icons when hovering over them*/
+.deg135:hover {
+  cursor: pointer;
+  height: 110px;
+  width: 90px;
+}
 
 footer{
-  padding:0;
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #333;
+  text-align: center;
+  word-spacing: 100px;
+}
+.tpweb{
+  bottom: 0px;
+  font-size: 80%;
+  color: white;
+  display: inline-block;
+  right: 0px;
+  padding:5px;
+  text-decoration: none;
 }

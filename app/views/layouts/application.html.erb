@@ -13,7 +13,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  
   <body>
 
     <%= yield %>
@@ -21,10 +20,12 @@
   </body>
 
   <footer>
-    <ul class="footer">
-      <li><a href="www.testophotography.com">Testo Photography</li>
-      <li><a href="www.linkedin.com/in/gregorytesto"></a>
-      <%= image_tag "in_logo.png", size: "15x15", alt: "Edit Entry" %></li>
-    </ul>
+    <div>
+      <a href="mailto:gtesto@testophotography.com">
+        <%= image_tag "mail.png", size: "20x20", alt: "Edit Entry" %></a>
+      <a class="tpweb" href="www.testophotography.com">TestoPhotography</a>
+      <a href="www.linkedin.com/in/gregorytesto">
+        <%= image_tag "in_logo.png", size: "15x15", alt: "Edit Entry" %></a>
+    <div/>
   </footer>
 </html>

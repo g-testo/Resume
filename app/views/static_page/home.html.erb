@@ -1,29 +1,31 @@
 <head>
-  <br><br><br>
+  
+  <br>
   <h1>Gregory David Testo</h1>
-    <div id=contact>
-      <a href="mailto:gtesto@testophotography.com">
-        <%= image_tag "mail.png", size: "40x40", alt: "Edit Entry" %>
-      </a>
+  <a class="me"> <%=image_tag "me.jpg", size: "150x200", alt: "Edit Entry" %></a>
+  <div class="contact">
+    <a href="mailto:gtesto@testophotography.com">
+      <%= image_tag "mail.png", size: "20x20", alt: "Edit Entry" %>gtesto@testophotography.com</a>
       <br>
-      Phone: 212-203-8276
+    <a href="www.testophotography.com">TestoPhotography</a>
       <br>
-      <a href="www.linkedin.com/in/gregorytesto">
-        <%= image_tag "linkedin.png", size: "80x20", alt: "Edit Entry" %>
-    </div>
-    </a> 
-  </h3>
+      <%= image_tag "phone.jpg", size: "20x20", alt: "Edit Entry" %>212-203-8276</a>
+    <br>
+    <a href="https://www.linkedin.com/in/gregorytesto">
+      <%= image_tag "linkedin.png", size: "80x20", alt: "Edit Entry" %></a>
+  </div>
 </head>
+
 <body>
   
-  <section>
+  <section class="personal">
     <h2>Personal Statement</h2>
     <span class="anchor" id="personal"></span>
     <div class="section"></div>
     <p>Passionate junior web developer experienced in full stack Rails and over a decade experience as a multimedia creator and designer. Solid web debugging and version control experience.</p>
   </section>
   
-  <section>
+  <section class="job">
     <h2>Job History</h2>
     <span class="anchor" id="jobs"></span>
     <p>
@@ -33,42 +35,43 @@
       </ul>
       <br>
       <h2 id="client">Clients</h2>
-      <ul id="client_jobs">
-        <li>SoNo Entertainment Studios, South Norwalk, Connecticut</li>
-        <li>XK9 Comunicação Sao Paulo, Brazil</li>
-        <li>ABI Marketing Public Relations, Manhattan, New York</li>
-        <li>Bobette’s Takout Bistro, Milford, Connecticut</li>
-        <li>Strategic Marketing of Rollins College, Winter Park, Florida</li>
-      </ul>
+      <div id="client_jobs">
+        <a href="http://www.sonotainment.com/">
+          <%= image_tag "sono.jpg", size: "130x60", alt: "Edit Entry" %></a>
+        <a href="http://www.mxk9.com.br/">
+          <%= image_tag "xk9.jpg", size: "60", alt: "Edit Entry" %></a>
+        <a href="http://www.abipr.com/">
+          <%= image_tag "abi.jpg", size: "120x60", alt: "Edit Entry" %></a>
+        <a href="http://www.bobettes.com/">
+          <%= image_tag "bobettes.gif", size: "90x60", alt: "Edit Entry" %></a>
+        <a href="http://www.rollins.edu/">
+          <%= image_tag "rollins.jpg", size: "60", alt: "Edit Entry" %></a>
+      </div>
     </p>
   </section>
   
-<section>
+  <section class="skills">
     <h2>Web Development Skills</h2>
     <span class="anchor" id="skills"></span>
-      <ul>
-        <li> <a href="html.com">
-          <%= image_tag "html.png", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="css">
-          <%= image_tag "css.png", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="js">
-          <%= image_tag "js.png", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="ruby">
-          <%= image_tag "ruby.jpg", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="rails">
-          <%= image_tag "rails.png", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="git">
-          <%= image_tag "git.png", size: "60x25", alt: "Edit Entry" %></a></li>
-        <li> <a href="bs">
-          <%= image_tag "bootstrap.png", size: "30x30", alt: "Edit Entry" %></a></li>
-        <li> <a href="jq">
-          <%= image_tag "jquery.jpg", size: "60x20", alt: "Edit Entry" %></a></li>
-        <li> <a href="wp">
-          <%= image_tag "wp.png", size: "30x30", alt: "Edit Entry" %></a></li>
-      </ul>
-</section>
+    <div class='circle-container'>
+      <a href="front.com" class='center'>
+        <%= image_tag "front.png", size: "40x60", alt: "Edit Entry" %></a>
+      <a href="jq" class='deg0'>
+        <%= image_tag "jquery.png", size: "60x20", alt: "Edit Entry" %></a>
+      <a href="wp" class='deg45'>
+        <%= image_tag "wp.png", size: "40x60", alt: "Edit Entry" %></a>
+      <a href="ruby" class='deg135'>
+        <%= image_tag "ruby.jpg", size: "25x60", alt: "Edit Entry" %></a>
+      <a href="git" class='deg180'>
+        <%= image_tag "git.png", size: "60x25", alt: "Edit Entry" %></a>
+      <a href="rails" class='deg225'>
+        <%= image_tag "rails.png", size: "30x60", alt: "Edit Entry" %></a>
+      <a href="bs" class='deg315'>
+        <%= image_tag "bootstrap.png", size: "40x60", alt: "Edit Entry" %></a>
+    </div>
+  </section>
   
-  <section>
+  <section class="eduction">
     <h2>Education</h2>
     <span class="anchor" id="education"></span>
     <div class="section"></div>
@@ -80,4 +83,5 @@
     </dl>
   </section>
   
+  <br>
 </body>
