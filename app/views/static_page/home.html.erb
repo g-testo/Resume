@@ -1,41 +1,32 @@
+
 <head>
-  
-  <br>
   <h1>Gregory David Testo</h1>
   <a class="me"> <%=image_tag "me.jpg", size: "150x200", alt: "Edit Entry" %></a>
   <div class="contact">
     <a href="mailto:gtesto@testophotography.com">
-      <%= image_tag "mail.png", size: "20x20", alt: "Edit Entry" %>gtesto@testophotography.com</a>
-      <br>
-    <a href="www.testophotography.com">TestoPhotography</a>
-      <br>
-      <%= image_tag "phone.jpg", size: "20x20", alt: "Edit Entry" %>212-203-8276</a>
+      <%= image_tag "mail.png", size: "20x20", alt: "Edit Entry" %></a>
+    <br>
+    <a href="https://www.testophotography.com">
+      <%= image_tag "website.png", size: "20x20", alt: "Edit Entry" %></a>
     <br>
     <a href="https://www.linkedin.com/in/gregorytesto">
-      <%= image_tag "linkedin.png", size: "80x20", alt: "Edit Entry" %></a>
+      <%= image_tag "in_logo.png", size: "20x20", alt: "Edit Entry" %></a>
   </div>
 </head>
 
 <body>
   
   <section class="personal">
-    <h2>Personal Statement</h2>
+    <h2 id="personal_title">Personal Statement</h2>
     <span class="anchor" id="personal"></span>
     <div class="section"></div>
     <p>Passionate junior web developer experienced in full stack Rails and over a decade experience as a multimedia creator and designer. Solid web debugging and version control experience.</p>
   </section>
   
-  <section class="job">
-    <h2>Job History</h2>
-    <span class="anchor" id="jobs"></span>
-    <p>
-       <ul id="client_jobs">
-        <li>Apple, Manhattan, New York</li>
-        <li>Testo Photography, Manhattan, New York</li>
-      </ul>
-      <br>
-      <h2 id="client">Clients</h2>
-      <div id="client_jobs">
+  <section class="clients">
+      <h2>Clients</h2>
+      <span class="anchor" id="jobs"></span>
+      <div class="client_icons">
         <a href="http://www.sonotainment.com/">
           <%= image_tag "sono.jpg", size: "130x60", alt: "Edit Entry" %></a>
         <a href="http://www.mxk9.com.br/">
@@ -47,41 +38,38 @@
         <a href="http://www.rollins.edu/">
           <%= image_tag "rollins.jpg", size: "60", alt: "Edit Entry" %></a>
       </div>
-    </p>
   </section>
   
   <section class="skills">
     <h2>Web Development Skills</h2>
     <span class="anchor" id="skills"></span>
     <div class='circle-container'>
-      <a href="front.com" class='center'>
+      <a href="https://en.wikipedia.org/wiki/Front-end_web_development" class='center'>
         <%= image_tag "front.png", size: "40x60", alt: "Edit Entry" %></a>
-      <a href="jq" class='deg0'>
+      <a href="https://jquery.com/" class='deg0'>
         <%= image_tag "jquery.png", size: "60x20", alt: "Edit Entry" %></a>
-      <a href="wp" class='deg45'>
-        <%= image_tag "wp.png", size: "40x60", alt: "Edit Entry" %></a>
-      <a href="ruby" class='deg135'>
-        <%= image_tag "ruby.jpg", size: "25x60", alt: "Edit Entry" %></a>
-      <a href="git" class='deg180'>
-        <%= image_tag "git.png", size: "60x25", alt: "Edit Entry" %></a>
-      <a href="rails" class='deg225'>
-        <%= image_tag "rails.png", size: "30x60", alt: "Edit Entry" %></a>
-      <a href="bs" class='deg315'>
-        <%= image_tag "bootstrap.png", size: "40x60", alt: "Edit Entry" %></a>
+      <a href="https://wordpress.com/" class='deg45'>
+        <%= image_tag "wp.png", size: "60", alt: "Edit Entry" %></a>
+      <a href="http://getbootstrap.com/" class='deg135'>
+        <%= image_tag "bootstrap.png", size: "30x60", alt: "Edit Entry" %></a>
+      <a href="https://git-scm.com/" class='deg180'>
+        <%= image_tag "git.png", size: "60x30", alt: "Edit Entry" %></a>
+      <a href="https://www.ruby-lang.org/en/" class='deg225'>
+        <%= image_tag "ruby.jpg", size: "60", alt: "Edit Entry" %></a>
+      <a href="https://rubyonrails.org/" class='deg315'>
+        <%= image_tag "rails.png", size: "65", alt: "Edit Entry" %></a>
     </div>
   </section>
   
-  <section class="eduction">
+  <section class="education">
     <h2>Education</h2>
     <span class="anchor" id="education"></span>
-    <div class="section"></div>
-    <dl>
-      <dt>New York University</dt>
-      <dd>- Javascript and JQuery</dd>
-      <dt>Rollins College, Winter Park, Florida</dt>
-      <dd>- Bachelor of Arts: Economics</dd>
-    </dl>
+    <a href="http://www.nyu.edu/">
+      <%= image_tag "nyu.jpg", size: "40", alt: "Edit Entry" %></a>
+    Javascript and JQuery
+    <a href="http://www.rollins.edu/">
+      <%= image_tag "rollins.jpg", size: "40", alt: "Edit Entry" %></a>
+    Bachelor of Arts: Economics
   </section>
   
-  <br>
 </body>
