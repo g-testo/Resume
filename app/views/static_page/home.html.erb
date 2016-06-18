@@ -1,6 +1,6 @@
 
 <head>
-  <h1>Gregory David Testo</h1>
+  <h1 id="page_title">Gregory David Testo</h1>
   <a class="me"> <%=image_tag "me.jpg", size: "150x200", alt: "Edit Entry" %></a>
   <div class="contact">
     <a href="mailto:gtesto@testophotography.com">
@@ -17,14 +17,16 @@
 <body>
   
   <section class="personal">
-    <h2 id="personal_title">Personal Statement</h2>
+    <h2 id="page_subtitle">Personal Statement</h2>
     <span class="anchor" id="personal"></span>
     <div class="section"></div>
     <p>Passionate junior web developer experienced in full stack Rails and over a decade experience as a multimedia creator and designer. Solid web debugging and version control experience.</p>
   </section>
   
+  
+  
   <section class="clients">
-      <h2>Clients</h2>
+      <h2 id="page_subtitle">Clients</h2>
       <span class="anchor" id="jobs"></span>
       <div class="client_icons">
         <a href="http://www.sonotainment.com/">
@@ -41,7 +43,7 @@
   </section>
   
   <section class="skills">
-    <h2>Web Development Skills</h2>
+    <h2 id="page_subtitle">Web Development Skills</h2>
     <span class="anchor" id="skills"></span>
     <div class='circle-container'>
       <a href="https://en.wikipedia.org/wiki/Front-end_web_development" class='center'>
@@ -62,7 +64,7 @@
   </section>
   
   <section class="education">
-    <h2>Education</h2>
+    <h2 id="page_subtitle">Education</h2>
     <span class="anchor" id="education"></span>
     <a href="http://www.nyu.edu/">
       <%= image_tag "nyu.jpg", size: "40", alt: "Edit Entry" %></a>
