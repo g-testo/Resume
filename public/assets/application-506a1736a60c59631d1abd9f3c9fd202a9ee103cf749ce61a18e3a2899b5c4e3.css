@@ -1,0 +1,229 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* line 6, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.nav {
+  word-spacing: 70px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  background-color: rgba(50, 50, 50, 0.7);
+  /* zindex prevents elements from skill circle from overlaping navbar*/
+  z-index: 100;
+}
+/* line 20, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.nav li {
+  display: inline;
+  padding: 5px 5px;
+}
+/* line 25, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 33, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.nav a:hover {
+  background-color: #111;
+  transition: all 1s ease;
+}
+
+/*Anchor correction for using a fixed centered navigation bar*/
+/* line 41, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.anchor {
+  display: block;
+  height: 120px;
+  /*same height as header*/
+  margin-top: -120px;
+  /*same height as header*/
+  visibility: hidden;
+}
+
+/* line 48, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+#page_title {
+  font-size: 300%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* line 54, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+#page_subtitle {
+  font-size: 175%;
+  font-style: normal;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* line 61, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.me {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 66, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.contact {
+  float: left;
+  margin-right: 50px;
+}
+
+/* line 71, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+head {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  position: absolute;
+  display: inline-block;
+}
+
+/* line 79, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+body {
+  background-color: rgba(200, 200, 200, 0.5);
+  background-size: cover;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 50px;
+}
+
+/* line 88, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.personal {
+  font-size: 120%;
+  text-align: justify;
+  width: 75%;
+  margin-left: 100px;
+  display: block;
+}
+
+/* line 96, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.skills {
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+}
+
+/* line 102, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.education {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 107, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.client_icons {
+  font-size: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 113, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.circle-container {
+  background-image: url("cir.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  position: relative;
+  height: 25em;
+  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  margin: 1.75em auto 0;
+}
+
+/* line 124, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.circle-container a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin: -2em;
+  width: 10%;
+}
+
+/* line 133, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.circle-container img {
+  display: block;
+  width: 100%;
+}
+
+/* line 134, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg0 {
+  transform: translate(12em);
+}
+
+/* 12em = half the width of the wrapper */
+/* line 135, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg45 {
+  transform: rotate(45deg) translate(12em) rotate(-45deg);
+}
+
+/* line 136, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg135 {
+  transform: rotate(135deg) translate(12em) rotate(-135deg);
+}
+
+/* line 137, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg180 {
+  transform: translate(-12em);
+}
+
+/* line 138, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg225 {
+  transform: rotate(225deg) translate(12em) rotate(-225deg);
+}
+
+/* line 139, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.deg315 {
+  transform: rotate(315deg) translate(12em) rotate(-315deg);
+}
+
+/* line 141, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+footer {
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(50, 50, 50, 0.7);
+  text-align: center;
+  word-spacing: 50px;
+}
+
+/* line 152, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.tpweb {
+  bottom: 0px;
+  font-size: 20;
+  color: white;
+  display: inline-block;
+  right: 0px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* line 162, /home/ubuntu/workspace/resume_app/app/assets/stylesheets/static_page.scss */
+.education {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */

@@ -3,9 +3,8 @@
   They will automatically be included in application.css.
 */
 .nav{
-  	word-spacing: 70px;
     margin:0;
-    padding:0;
+    padding: 0px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,13 +17,13 @@
   	
   	li{
       display:inline;
-      padding: 5px 5px;
+      padding: 0px;
   	}
   	
   	a{
       color: white;
       display: inline-block;
-      padding:10px;
+      padding:10px 40px;
       text-decoration: none;
       text-align: center;
     }
@@ -93,9 +92,7 @@ body {
 }
 
 .skills{
-  display: inline-block;
-  width: 100%;
-  text-align: justify;
+
 }
 
 .education{
@@ -129,7 +126,7 @@ body {
     width: 10%;
 }
 
-.circle-container img { display: block; width: 100%; }
+.circle-container img { display: block; }
 .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
 .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
 .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
@@ -137,25 +134,23 @@ body {
 .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
 
-footer{
+footer {
   position: fixed;
-  width: 100%;
   right: 0px;
   bottom: 0px;
   left: 0px;
   background-color: rgba(50, 50, 50, 0.7);
   text-align: center;
-  word-spacing: 50px;
 }
-
-.tpweb{
-  bottom: 0px;
-  font-size: 20;
-  color: white;
+footer a {
   display: inline-block;
-  right: 0px;
-  padding:5px;
+  padding: 0 40px;
   text-decoration: none;
+  text-align: center;
+}
+footer a:hover {
+  background-color: #111;
+  transition: all 1s ease;
 }
 
 .education{
@@ -163,4 +158,10 @@ footer{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+}
+hr {
+  color: rgba(50, 50, 50, 0.1);
+  background-color: rgba(50, 50, 50, 0.3);
+  height: 1px;
+  width: 75%;
 }
