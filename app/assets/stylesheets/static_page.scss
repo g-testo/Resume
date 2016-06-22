@@ -3,17 +3,17 @@
   They will automatically be included in application.css.
 */
 .nav{
-    margin:0;
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align:center;
-  	left: 0;
-  	right: 0;
-    background-color: rgba(50, 50, 50, 0.7);
-  	/* zindex prevents elements from skill circle from overlaping navbar*/
-  	z-index: 100;
+  margin: 0;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  background-color: rgba(50, 50, 50, 0.7);
+  /* zindex prevents elements from skill circle from overlaping navbar*/
+  z-index: 100;
   	
   	li{
       display:inline;
@@ -21,12 +21,12 @@
   	}
   	
   	a{
-      color: white;
-      display: inline-block;
-      padding:10px 40px;
-      text-decoration: none;
-      text-align: center;
-    }
+  color: white;
+  display: inline-block;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-align: center;
+}
     
     a:hover {
       background-color: #111;
@@ -43,33 +43,45 @@
   visibility: hidden;
 }
 
-#page_title{
-  font-size: 300%;
+
+#page_title {
+  font-size: 150%;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-#page_subtitle{
-  font-size: 175%;
+#page_subtitle {
+  font-size: 100%;
   font-style: normal;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
-.me{
+.me {
   float: left;
   margin-right: 15px;
+  width: 40%;
+  height: 200px;
+  border-radius: 200px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(me.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  background-position: center; 
+  background-size: 120%;
 }
 
-.contact{
+.contact {
   float: left;
-  margin-right: 50px;
+  margin-right: 5px;
 }
 
-head{
-  text-align:center;
-  margin:auto;
-  padding:10px;
+head {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
   position: absolute;
   display: inline-block;
 }
@@ -77,20 +89,19 @@ head{
 body {
   background-color: rgba(200, 200, 200, 0.5);
   background-size: cover;
-  width: 600px;
-  margin: 0 auto; 
+  width: 300px;
+  margin: 0 auto;
   display: block;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
-.personal{
-  font-size: 120%;
-  text-align: justify;
-  width: 75%;
-  margin-left: 100px;
+.personal {
+  font-size: 70%;
+  text-align: left;
+  width: 50%;
+  margin-left: 40%;
   display: block;
 }
-
 .skills{
 
 }
@@ -101,9 +112,10 @@ body {
 }
 
 .client_icons{
-  font-size: 80px;
+  font-size: 30px;
   text-align: center;
-  width: 100%;
+  width: 80%;
+  padding-top: 10px
 }
 
 .circle-container {
@@ -142,9 +154,10 @@ footer {
   background-color: rgba(50, 50, 50, 0.7);
   text-align: center;
 }
-footer a {
+
+footer a{
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 1px;
   text-decoration: none;
   text-align: center;
 }
@@ -157,11 +170,35 @@ footer a:hover {
   float: left;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
+
 hr {
   color: rgba(50, 50, 50, 0.1);
   background-color: rgba(50, 50, 50, 0.3);
   height: 1px;
   width: 75%;
 }
+// body {
+//     background-color: grey;
+//   }
+//   @media screen and (max-width: 960px) {
+//     body {
+//       background-color: red;
+// } }
+//   @media screen and (max-width: 768px) {
+//     body {
+//       background-color: orange;
+//     }
+//   }
+//   @media screen and (max-width: 550px) {
+//     body {
+//       background-color: yellow;
+// } }
+
+
+// @media screen and (max-width: 420px) {
+//     body {
+//       background-color: green;
+//     }
+// }
